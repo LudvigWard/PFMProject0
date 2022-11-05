@@ -158,7 +158,7 @@ void PFMProject0AudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
         {
             if (shouldPlaySound)
             {
-                buffer.setSample(channel, i, r);
+                buffer.setSample(channel, i, r.nextFloat());
             }
             else
             {
